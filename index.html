@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Niraj Singh - Front-End Developer & CS Student Portfolio">
+  <title>Nileshkumar Sharma | Front-End Developer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#home" class="navbar__logo">NS</a>
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li><a href="#home" class="navbar__link active">Home</a></li>
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#skills" class="navbar__link">Skills</a></li>
+          <li><a href="#projects" class="navbar__link">Projects</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="theme-toggle__icon theme-toggle__icon--sun">☀️</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon">🌙</span>
+        </button>
+      </nav>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <p class="hero__greeting">Hello, I'm</p>
+        <h1 class="hero__name">Nileshkumar Sharma</h1>
+        <p class="hero__role">Front-End Developer | CS Student</p>
+        <p class="hero__tagline">Building intuitive interfaces and turning ideas into pixel-perfect experiences.</p>
+        <a href="#projects" class="btn btn--primary hero__cta">View Projects</a>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll down</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__card">
+          <div class="about__content">
+            <p class="about__bio">
+              I'm a 2nd-year Computer Science student with a strong focus on front-end development. 
+              I enjoy creating responsive, accessible, and performant web applications. When I'm not coding, 
+              I like to explore new technologies and contribute to open-source projects.
+            </p>
+            <div class="about__details">
+              <div class="about__item">
+                <h3>Education</h3>
+                <p>B.Sc in Computer Science (2nd Year)</p>
+                <p class="about__sub">Pursuing degree with focus on Web Technologies & Software Engineering</p>
+              </div>
+              <div class="about__item">
+                <h3>Career Objective</h3>
+                <p>To secure a Front-End Developer internship where I can apply my skills in HTML, CSS, and JavaScript, 
+                  learn from experienced developers, and contribute to real-world projects while growing as a professional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__grid">
+          <div class="skill-card" data-skill="html">
+            <div class="skill-card__icon">HTML5</div>
+            <h3 class="skill-card__title">HTML</h3>
+            <div class="skill-card__bar"><span class="skill-card__fill" data-level="90"></span></div>
+            <span class="skill-card__percent">90%</span>
+          </div>
+          <div class="skill-card" data-skill="css">
+            <div class="skill-card__icon">CSS3</div>
+            <h3 class="skill-card__title">CSS</h3>
+            <div class="skill-card__bar"><span class="skill-card__fill" data-level="85"></span></div>
+            <span class="skill-card__percent">85%</span>
+          </div>
+          <div class="skill-card" data-skill="javascript">
+            <div class="skill-card__icon">JS</div>
+            <h3 class="skill-card__title">JavaScript</h3>
+            <div class="skill-card__bar"><span class="skill-card__fill" data-level="80"></span></div>
+            <span class="skill-card__percent">80%</span>
+          </div>
+          <div class="skill-card" data-skill="git">
+            <div class="skill-card__icon">Git</div>
+            <h3 class="skill-card__title">Git</h3>
+            <div class="skill-card__bar"><span class="skill-card__fill" data-level="75"></span></div>
+            <span class="skill-card__percent">75%</span>
+          </div>
+          <div class="skill-card" data-skill="responsive">
+            <div class="skill-card__icon">📱</div>
+            <h3 class="skill-card__title">Responsive Design</h3>
+            <div class="skill-card__bar"><span class="skill-card__fill" data-level="88"></span></div>
+            <span class="skill-card__percent">88%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">Project 1</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">E-Commerce Product Page</h3>
+              <p class="project-card__desc">A responsive product listing page with filters, cart functionality, and modern UI built with vanilla JavaScript.</p>
+              <div class="project-card__links">
+                <a href="#" class="btn btn--outline" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">Project 2</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Task Management App</h3>
+              <p class="project-card__desc">A drag-and-drop task board with local storage persistence. Add, edit, and organize tasks by status.</p>
+              <div class="project-card__links">
+                <a href="#" class="btn btn--outline" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">Project 3</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Weather Dashboard</h3>
+              <p class="project-card__desc">Real-time weather display with search, favorites, and clean dashboard layout using a weather API.</p>
+              <div class="project-card__links">
+                <a href="#" class="btn btn--outline" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get In Touch</h2>
+        <div class="contact__wrapper">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="contact-form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <span class="contact-form__error" id="nameError"></span>
+            </div>
+            <div class="contact-form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              <span class="contact-form__error" id="emailError"></span>
+            </div>
+            <div class="contact-form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+              <span class="contact-form__error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary contact-form__submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__social">
+        <a href="#" class="footer__link" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" class="footer__link" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" class="footer__link" aria-label="Twitter" target="_blank" rel="noopener">Twitter</a>
+      </div>
+      <p class="footer__copyright">&copy; <span id="year"></span> Niraj Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
